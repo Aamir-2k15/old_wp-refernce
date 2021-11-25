@@ -1,0 +1,30 @@
+/*
+Theme Name: BootPress
+Theme URI: 
+Author: Aamir
+Author URI: 
+Description: 
+Version: 1
+Text Domain: 
+Version Date: 16th December 2018
+*/
+/*Nav Menu*/
+.nav-link {border: 1px solid #DDD;position: relative;}
+#navbarSupportedContent .dropdown-menu, #navbarSupportedContent .dropdown-menu li{margin:0;} 
+.menu-item-has-children>a:after{display: inline-block;
+margin-left: .255em;
+vertical-align: .255em;
+content: "";
+border-top: .3em solid;
+border-right: .3em solid transparent;
+border-bottom: 0;
+border-left: .3em solid transparent;position: absolute;
+left: 90% !important;
+top: 50%;}
+ /*for desktop*/
+@media(min-width:769px){
+	.menu-item-has-children .dropdown-menu{display:none;}
+	.menu-item-has-children:hover>.dropdown-menu{display:block;}
+	ul.sub-menu.dropdown-menu.menu-depth-2 , ul.sub-menu.dropdown-menu.menu-depth-3{left: 100%;top: -9px;}
+	ul.sub-menu.dropdown-menu.menu-depth-4, ul.sub-menu.dropdown-menu.menu-depth-5{right: 100%;top:100%;}
+}
